@@ -293,7 +293,7 @@ function App() {
             JV.
           </a>
 
-          <div className="flex max-w-full flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-gray-600 sm:gap-x-5 sm:gap-y-3 sm:text-sm">
+          <div className="hidden md:flex max-w-full flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-gray-600 sm:gap-x-5 sm:gap-y-3 sm:text-sm">
             <a href="#about" className="hover:text-[#334E68]">
               About
             </a>
@@ -313,6 +313,22 @@ function App() {
               Contact
             </a>
           </div>
+          {/* Mobile Hamburger Menu */}
+<details className="relative md:hidden">
+  <summary className="cursor-pointer list-none rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700">
+    ☰ Menu
+  </summary>
+
+  <div className="absolute right-0 top-full z-50 mt-2 flex w-48 flex-col gap-3 rounded-lg border border-gray-200 bg-white p-4 shadow-lg">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</details>
+
         </nav>
       </header>
 
